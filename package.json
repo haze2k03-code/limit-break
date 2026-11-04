@@ -1,0 +1,18 @@
+{
+  "name": "limit-break",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Anime-themed gym, running, diet and sleep tracker with power levels, goals and friends.",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.8.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
