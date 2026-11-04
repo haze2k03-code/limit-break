@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Limit Break</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20100%20100%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%233fb6ff%22/%3E%3Cstop%20offset%3D%22.6%22%20stop-color%3D%22%23ff8a1f%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23ffd23f%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath%20d%3D%22M14%2072A36%2036%200%200%201%2086%2072%22%20fill%3D%22none%22%20stroke%3D%22%232a2650%22%20stroke-width%3D%2212%22%20stroke-linecap%3D%22round%22/%3E%3Cpath%20d%3D%22M14%2072A36%2036%200%200%201%2086%2072%22%20fill%3D%22none%22%20stroke%3D%22url%28%23g%29%22%20stroke-width%3D%228%22%20stroke-linecap%3D%22round%22/%3E%3Cg%20stroke%3D%22%23ecebff%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20opacity%3D%22.7%22%3E%3Cpath%20d%3D%22M24%2072H30%22/%3E%3Cpath%20d%3D%22M29.6%2049.6L33.8%2053.8%22/%3E%3Cpath%20d%3D%22M50%2032V38%22/%3E%3Cpath%20d%3D%22M70.4%2049.6L66.2%2053.8%22/%3E%3C/g%3E%3Cpath%20d%3D%22M84%2056L91%2050L89%2057L97%2054M88%2064L96%2066%22%20fill%3D%22none%22%20stroke%3D%22%23ffd23f%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3Cpath%20d%3D%22M50%2072L92%2044%22%20stroke%3D%22%23ff5470%22%20stroke-width%3D%225%22%20stroke-linecap%3D%22round%22/%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2272%22%20r%3D%228%22%20fill%3D%22%23ecebff%22/%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2272%22%20r%3D%223.5%22%20fill%3D%22%230d0b1e%22/%3E%3Cpath%20d%3D%22M36%2088H64%22%20stroke%3D%22%23ff8a1f%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22/%3E%3C/svg%3E">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
 <style>
 /* Layout: night-sky training ground. Power-level hero, tab bar, one panel per tab; two-column grids that stack on phones */
@@ -22,6 +23,8 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-
 header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
 .logo{font-family:var(--display);font-size:26px;letter-spacing:.05em;margin:0;cursor:pointer;user-select:none}
 .logo span{color:var(--ki)}
+.logo{display:flex;align-items:center}
+.logo .mark{width:36px;height:36px;flex:none;margin-right:10px;filter:drop-shadow(0 0 10px rgba(255,138,31,.35))}
 .who{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted)}
 .who b{color:var(--fg);font-family:var(--display)}
 button{font:inherit;cursor:pointer;color:inherit}
@@ -155,7 +158,7 @@ body.lb .logo span{color:var(--aura);text-shadow:0 0 18px var(--aura)}
 <body>
 <div class="wrap" id="app">
   <header>
-    <h1 class="logo" id="logo">LIMIT<span>BREAK</span></h1>
+    <h1 class="logo" id="logo"><svg class="mark" aria-hidden="true" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3fb6ff"/><stop offset=".6" stop-color="#ff8a1f"/><stop offset="1" stop-color="#ffd23f"/></linearGradient></defs><path d="M14 72A36 36 0 0 1 86 72" fill="none" stroke="#2a2650" stroke-width="12" stroke-linecap="round"/><path d="M14 72A36 36 0 0 1 86 72" fill="none" stroke="url(#gg)" stroke-width="8" stroke-linecap="round"/><g stroke="#ecebff" stroke-width="2" stroke-linecap="round" opacity=".7"><path d="M24 72H30"/><path d="M29.6 49.6L33.8 53.8"/><path d="M50 32V38"/><path d="M70.4 49.6L66.2 53.8"/></g><path d="M84 56L91 50L89 57L97 54M88 64L96 66" fill="none" stroke="#ffd23f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M50 72L92 44" stroke="#ff5470" stroke-width="5" stroke-linecap="round"/><circle cx="50" cy="72" r="8" fill="#ecebff"/><circle cx="50" cy="72" r="3.5" fill="#0d0b1e"/><path d="M36 88H64" stroke="#ff8a1f" stroke-width="4" stroke-linecap="round"/></svg>LIMIT<span>BREAK</span></h1>
     <div class="who" id="who"></div>
   </header>
 
@@ -178,7 +181,7 @@ body.lb .logo span{color:var(--aura);text-shadow:0 0 18px var(--aura)}
 
   <div id="main" hidden>
     <div class="panel">
-      <div class="banner" id="viewBanner" hidden><span>Viewing <b id="vbName"></b>'s progress</span><button class="btn sm alt" id="vbBack">Back to mine</button></div>
+      <div class="banner" id="viewBanner" hidden><span>Viewing <b id="vbName"></b>'s progress<span class="note" id="vbDemo" hidden> · Demo fighter: a year of non-stop training to show every feature</span></span><button class="btn sm alt" id="vbBack">Back to mine</button></div>
 
       <section class="hero">
         <div class="aura" id="hRank">ROOKIE</div>
@@ -567,7 +570,7 @@ function render(){
   }
   $("onboard").hidden=true;$("main").hidden=false;
   document.body.classList.toggle("ro",!mine());
-  $("viewBanner").hidden=mine()||!hasMe;$("vbName").textContent=P().name||"Fighter";
+  $("viewBanner").hidden=mine()||!hasMe;$("vbName").textContent=P().name||"Fighter";$("vbDemo").hidden=!P().demo;
   if(!mine()&&S.tab==="history")S.tab="overview";
   const sc=score(D());renderHero(sc);
   document.querySelectorAll("#tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.t===S.tab));
@@ -766,14 +769,15 @@ function renderGoals(){
 let boardLoading=false;
 async function loadBoard(){
   if(boardLoading)return;boardLoading=true;
-  await Promise.all(Object.keys(S.fighters).map(async u=>{try{const b=S.db.doc("fighters/"+u);const[l,r]=await Promise.all([b.collection("lifts").get(),b.collection("runs").get()]);
+  S.board[VAREK_ID]=score(makeVarek());
+  await Promise.all(Object.keys(S.fighters).filter(u=>u!==VAREK_ID).map(async u=>{try{const b=S.db.doc("fighters/"+u);const[l,r]=await Promise.all([b.collection("lifts").get(),b.collection("runs").get()]);
     S.board[u]=score({lifts:l.docs.map(d=>d.data()),runs:r.docs.map(d=>d.data()),diet:[],sleep:[],weight:[],goals:[]})}catch(e){}}));
   boardLoading=false;schedule();
 }
 function renderBoard(){
   const rows=Object.entries(S.fighters).map(([u,f])=>({u,f,sc:u===S.view?score(D()):S.board[u]})).sort((a,b)=>(b.sc?.total||0)-(a.sc?.total||0));
   $("board").innerHTML=rows.length?rows.map((r,i)=>{const sc=r.sc,rk=sc?RANKS[rankOf(sc.total)][0]:"…";
-    return `<button class="fighter" data-view="${esc(r.u)}"><span class="pos">${i+1}</span><span><b>${esc(r.f.name)}</b>${r.u===S.me?'<span class="badge">YOU</span>':""}<br><span class="note">${esc(rk)} · ${sc?sc.streak+" wk streak · "+sc.prs+" PRs":"loading…"}</span></span><span class="pw">${sc?nf(sc.total):"–"}</span></button>`}).join(""):`<div class="empty">No fighters yet.</div>`;
+    return `<button class="fighter" data-view="${esc(r.u)}"><span class="pos">${i+1}</span><span><b>${esc(r.f.name)}</b>${r.u===S.me?'<span class="badge">YOU</span>':""}${r.f.demo?'<span class="badge" style="background:var(--bad);color:#fff">RIVAL · DEMO</span>':""}<br><span class="note">${esc(rk)} · ${sc?sc.streak+" wk streak · "+sc.prs+" PRs":"loading…"}</span></span><span class="pw">${sc?nf(sc.total):"–"}</span></button>`}).join(""):`<div class="empty">No fighters yet.</div>`;
 }
 
 // ---------- history form ----------
@@ -977,11 +981,47 @@ $("heat").addEventListener("click",ev=>{const r=ev.target.closest("rect[data-day
   $("lg-from").value=s;$("lg-to").value=s;$("lg-type").value="all";$("lg-q").value="";LG.edit=null;S.tab="history";renderHistForm();render();
   document.querySelector("#log").scrollIntoView({behavior:"smooth",block:"start"})});
 
+// ---------- Varek: built-in demo fighter ----------
+const VAREK_ID="varek";
+const VAREK_PROFILE={name:"Varek",demo:true,joined:"",custom:[],
+  routine:[{name:"Bench Press",sets:4,reps:5,kg:100},{name:"Deadlift",sets:4,reps:5,kg:180},{name:"Squat",sets:4,reps:5,kg:150}],
+  targets:{kcal:2800,protein:170,carbs:330,fat:80,water:4,sleep:8}};
+let varekCache=null;
+function makeVarek(){
+  const t=todayISO();if(varekCache&&varekCache.t===t)return varekCache.d;
+  let sd=90210;const r=()=>(sd=(sd*16807)%2147483647)/2147483647;
+  const today=dn(t),start=today-364,d={lifts:[],runs:[],diet:[],sleep:[],weight:[],goals:[]};
+  const r25=v=>Math.round(v/2.5)*2.5;
+  const split=[
+    [["Bench Press",72.5,1,5],["Shoulder Press",42.5,.6,8],["Incline Dumbbell Press",24,.35,10],["Tricep Pushdown",30,.4,12]],
+    [["Deadlift",140,1.6,5],["Lat Pulldown",60,.7,10],["Barbell Row",65,.8,8],["Bicep Curl",16,.25,12]],
+    [["Squat",110,1.4,5],["Leg Press",180,2.5,10],["Romanian Deadlift",85,1,8],["Calf Raise",70,.8,15]]];
+  const MEALS=[["07:30","Oats, whey, banana, peanut butter",720,48,90,18],["13:00","Chicken rice bowl, dal, salad",850,55,95,20],["17:00","Greek yogurt, fruit, almonds",380,28,35,14],["21:00","Paneer bhurji, 3 roti, sabzi",780,40,80,30]];
+  let id=0;
+  for(let n=start;n<=today;n++){
+    const date=fromDn(n),wd=new Date(n*864e5).getUTCDay(),wks=(n-start)/7,blk=Math.floor(wks/5)*5;
+    if(wd>=1&&wd<=6&&r()>.03)split[(wd-1)%3].forEach(([ex,b,g,reps],i)=>d.lifts.push({id:"v"+(id++),date,ex,sets:4,reps,kg:r25(b+g*blk)||2.5,at:i}));
+    if((wd===2||wd===4||wd===0)&&r()>.04){const km=+(wd===0?10+r()*6:5+r()*3).toFixed(1),pace=5.85-(n-start)/365*.95+(r()-.5)*.18;
+      d.runs.push({id:"v"+(id++),date,time:wd===0?"06:30":"05:45",km,min:+(km*pace).toFixed(1),type:wd===0?"Long run":r()>.5?"Tempo":"Easy jog"})}
+    if(n<today||new Date().getHours()>=21){const meals=MEALS.map((m,i)=>{const k=.92+r()*.16;return{id:"vm"+i,time:m[0],food:m[1],kcal:Math.round(m[2]*k),p:Math.round(m[3]*k),c:Math.round(m[4]*k),f:Math.round(m[5]*k)}});
+      d.diet.push({id:date,date,meals,water:+(3.6+r()*.6).toFixed(2)})}
+    if(n<today){const bed=22*60+Math.round(r()*40),dur=456+Math.round(r()*36);d.sleep.push({id:date,date,bed:hhmm(bed),wake:hhmm(bed+dur),q:r()>.15?"Great":"Okay",hours:+(dur/60).toFixed(2)})}
+    if((n-start)%3===0)d.weight.push({id:date,date,kg:+(74+4*(n-start)/365+(r()-.5)*.5).toFixed(1)});
+  }
+  const yr=t.slice(0,4),mo=t.slice(0,7);
+  d.goals=[{id:"vg1",span:"year",period:yr,type:"lift",ex:"Deadlift",target:230},{id:"vg2",span:"year",period:yr,type:"run",target:1200},{id:"vg3",span:"year",period:yr,type:"sessions",target:280},
+    {id:"vg4",span:"year",period:yr,type:"weight",target:78,start:74},{id:"vg5",span:"month",period:mo,type:"sessions",target:24},{id:"vg6",span:"month",period:mo,type:"run",target:110},
+    {id:"vg7",span:"month",period:mo,type:"sleep",target:7.8},{id:"vg8",span:"month",period:mo,type:"protein",target:170}];
+  varekCache={t,d};return d;
+}
+
 // ---------- data wiring ----------
 let subs=[];
 function setView(uid){
   if(!uid||uid===S.view&&subs.length)return;
-  subs.forEach(u=>u());subs=[];S.view=uid;S.data[uid]=S.data[uid]||emptyData();
+  subs.forEach(u=>u());subs=[];S.view=uid;
+  if(uid===VAREK_ID){S.data[uid]=makeVarek();S.lastRank=null;schedule();return}
+  S.data[uid]=S.data[uid]||emptyData();
   const base=S.db.doc("fighters/"+uid);
   KINDS.forEach(k=>subs.push(base.collection(k).onSnapshot(sn=>{S.data[uid][k]=sn.docs.map(d=>({id:d.id,...d.data()}));schedule()},onErr)));
   if(uid!==S.me)S.lastRank=null;
@@ -998,8 +1038,8 @@ async function init(){
   const cw=user?await user.can("data.write"):null;S.canWrite=cw!==false;
   const timer=setTimeout(()=>{if(!S.loaded)status("Can't reach your data yet. Check your connection; it will load when it can.")},10000);
   db.collection("fighters").onSnapshot(sn=>{
-    const f={};sn.docs.forEach(d=>{const v=d.data();if(v&&v.name)f[d.id]=v});S.fighters=f;
-    if(!S.loaded){S.loaded=true;clearTimeout(timer);status("");if(S.me&&f[S.me])setView(S.me);else if(!S.me&&Object.keys(f).length)setView(Object.keys(f)[0])}
+    const f={};sn.docs.forEach(d=>{const v=d.data();if(v&&v.name)f[d.id]=v});f[VAREK_ID]=VAREK_PROFILE;S.fighters=f;
+    if(!S.loaded){S.loaded=true;clearTimeout(timer);status("");if(S.me&&f[S.me])setView(S.me);else if(!S.me)setView(Object.keys(f)[0])}
     else if(S.me&&f[S.me]&&!S.view)setView(S.me);
     schedule();
   },e=>{clearTimeout(timer);onErr(e)});
